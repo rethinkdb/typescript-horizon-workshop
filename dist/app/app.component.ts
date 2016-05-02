@@ -36,10 +36,20 @@ export class ChatApp {
   collection = this.horizon("messages");
 
   onMessage(message: string) {
-    
+    this.collection.store({
+      user: this.username,
+      text: message,
+      time: new Date(),
+    }).forEach(output => console.log("Wrote message:", output));
   }
 
   onLogin(username: string) {
     this.username = username;
+    this.collection
+        .order("time", "descending")
+        .limit(20).watch()
+        .forEach(messages => {
+          this.messages = [...messages].reverse()
+        });
   }
 }
