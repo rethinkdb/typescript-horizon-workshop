@@ -6,7 +6,7 @@ import {Component, EventEmitter} from "angular2/core";
   events: ["doSendMessage: message"],
   template: `
   <div class="entry">
-    <input #message (keyup)="keyPress($event)" placeholder="Type message here" />
+    <input #message (keyup)="keyPress($event, message)" placeholder="Type message here" />
     <button (click)="sendMessage(message)">Send</button>
   </div>
   `
@@ -19,8 +19,8 @@ export class ChatInput {
     input.value = "";
   }
 
-  keyPress(event: KeyboardEvent) {
+  keyPress(event: KeyboardEvent, input) {
     if (event.keyCode === 13)
-      this.sendMessage(event.srcElement);
+      this.sendMessage(input);
   }
 }
