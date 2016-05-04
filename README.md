@@ -8,7 +8,7 @@ This repository has two branches. `master` contains the complete app, with two m
 
 
 ### Set up your environment
-Install [RethinkDB](http://rethinkdb.com/install) and Node.js (http://nodejs.org).
+Install [RethinkDB](http://rethinkdb.com/install) and [Node.js](http://nodejs.org).
 
 Next, install Horizon:
 ```
