@@ -54,7 +54,7 @@ Here's your tasks for these two methods:
   
 Remember, you can always check out the `complete` branch to see a working example.
 
-Once you've updated your code, you'll need to recompile with TypeScript:
+Once you've updated your code, you'll need to recompile with TypeScript. You can have TypeScript recompile as you work:
 ```
-dist/node_modules/.bin/tsc
+dist/node_modules/.bin/tsc --watch
 ```
