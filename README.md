@@ -56,5 +56,6 @@ Remember, you can always check out the `complete` branch to see a working exampl
 
 Once you've updated your code, you'll need to recompile with TypeScript. You can have TypeScript recompile as you work:
 ```
+cd dist
 ./node_modules/.bin/tsc --watch
 ```
