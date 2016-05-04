@@ -41,7 +41,7 @@ hz serve --dev
 
 ### Does it work yet?
 
-You can visit [http://localhost:8181], and our chat app should load. But it won't work yet (unless you've already checked out the `complete` branch), because we still need to add some code.
+You can visit [http://localhost:8181](), and our chat app should load. But it won't work yet (unless you've already checked out the `complete` branch), because we still need to add some code.
 
 In `dist/app/app.component.ts`, you'll see two methods that need to be filled out: `onMessage` and `onLogin`.
 
